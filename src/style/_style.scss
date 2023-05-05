@@ -115,8 +115,8 @@ iframe {
   gap: 4px;
   padding: 10px 20px;
   font-weight: 1000;
-  line-height: 140%;
-  font-size: 20px;
+  line-height: 1;
+  font-size: 16px;
   color: $back;
   background: $second;
   border-radius: 80px;
@@ -128,4 +128,23 @@ iframe {
     height: 16px;
     background: url('../img/arrow-right.svg') center/contain no-repeat;
   }
+
+  @include lg {
+    padding: 17px 32px;
+    font-size: 20px;
+    gap: 10px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 16px;
+  background-color: $second;
+  opacity: 1;
+  transition: width 0.3s ease;
+}
+.swiper-pagination-bullet-active {
+  width: 40px;
+  background-color: $back;
 }

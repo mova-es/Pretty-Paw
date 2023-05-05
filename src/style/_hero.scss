@@ -48,12 +48,12 @@
     justify-content: flex-end;
 
     @include lg {
-        padding-bottom: 74px;
+      padding-bottom: 74px;
     }
 
     @include xl {
-      min-height: 780px;
-      padding-bottom: 100px;
+    min-height: 780px;
+    padding-bottom: 100px;
     }
 
     @include xxl {
@@ -100,6 +100,6 @@
   }
 
   &__video-bg {
-    z-index: 8;
+    z-index: 2;
   }
 }
