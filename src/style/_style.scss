@@ -143,6 +143,10 @@ iframe {
   background-color: $second;
   opacity: 1;
   transition: width 0.3s ease;
+
+  @include md {
+    display: none;
+  }
 }
 .swiper-pagination-bullet-active {
   width: 40px;

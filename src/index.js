@@ -12,20 +12,19 @@ slidersInit(".career__slider", {
     el: ".career__slider-pagination",
   },
   breakpoints: {
-    // when window width is >= 320px
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
-    // when window width is >= 480px
+
     1024: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 26,
     },
-    // when window width is >= 640px
+
     1240: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
   },
 });

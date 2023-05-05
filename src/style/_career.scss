@@ -2,19 +2,30 @@
   padding-top: 80px;
 
   @include lg {
-    padding: 100px 0;
+    padding-top: 100px;
   }
 
   &__container {
   }
 
-  // .career__content
-
   &__content {
     padding-bottom: 40px;
-  }
 
-  // .career__title
+    @include md {
+      display: grid;
+      grid-template-columns: 528px min-content;
+      grid-template-rows: min-content;
+      grid-template-areas:
+        "title link"
+        "description link";
+      justify-content: space-between;
+    }
+
+    @include lg {
+      grid-template-columns: 720px min-content;
+      padding-bottom: 50px;
+    }
+  }
 
   &__title {
     font-weight: 1000;
@@ -24,51 +35,52 @@
     color: $second;
     margin-bottom: 24px;
 
+    @include md {
+      grid-area: title;
+    }
+
     @include lg {
       font-size: 52px;
       grid-area: title;
-      margin-bottom: 0;
+      margin-bottom: 40px;
     }
   }
 
-  // .career__description
-
   &__description {
     margin-bottom: 24px;
-  }
 
-  // .career__link
+    @include md {
+      grid-area: description;
+      margin-bottom: 0;
+    }
+
+    @include lg {
+      font-size: 20px;
+    }
+  }
 
   &__link {
+    @include md {
+      grid-area: link;
+      align-self: start;
+    }
   }
-
-  // .career__slider
 
   &__slider {
   }
 
-  // .career__image-list
-
   &__image-list {
   }
-
-  // .career__image-item
 
   &__image-item {
   }
 
-  // .career__image-wrapper
-
   &__image-wrapper {
   }
-
-  // .career__image
 
   &__image {
     border-radius: 16px;
   }
-
-  // .career__slider-pagination
 
   &__slider-pagination {
   }
