@@ -13,18 +13,21 @@ slidersInit(".career__slider", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
       spaceBetween: 20,
+      pagination: false,
     },
 
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
       spaceBetween: 26,
+      pagination: false,
     },
 
     1240: {
-      slidesPerView: 4,
+      slidesPerView: 'auto',
       spaceBetween: 30,
+      pagination: false,
     },
   },
 });

@@ -73,6 +73,19 @@
   }
 
   &__image-item {
+    height: unset;
+    display: flex;
+    align-items: center;
+
+    @include md {
+      &:nth-child(odd) {
+        width: 35%;
+      }
+
+      &:nth-child(even) {
+        width: 24%;
+      }
+    }
   }
 
   &__image-wrapper {
@@ -84,12 +97,4 @@
 
   &__slider-pagination {
   }
-}
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-pagination {
 }
