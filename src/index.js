@@ -38,9 +38,11 @@ slidersInit(".about__slider", {
   },
 });
 
-const videoBG = document.querySelector(".video-bg");
+const videoBG = document.querySelectorAll(".video-bg");
 
-videoBG.innerHTML = `
-<source src="video/video.webm" type="video/webm">
-<source src="video/video.mp4" type="video/mp4">
-`;
+videoBG.forEach(video => {
+  video.innerHTML = `
+    <source src="video/video.webm" type="video/webm">
+    <source src="video/video.mp4" type="video/mp4">`;
+});
+
