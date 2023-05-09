@@ -1,11 +1,9 @@
 .career {
+  overflow-x: hidden;
   padding-top: 80px;
 
   @include lg {
     padding-top: 100px;
-  }
-
-  &__container {
   }
 
   &__content {
@@ -67,6 +65,10 @@
   }
 
   &__slider {
+    @include xl {
+      overflow: visible;
+    }
+    
   }
 
   &__image-list {
@@ -79,11 +81,21 @@
 
     @include md {
       &:nth-child(odd) {
-        width: 35%;
+        width: 34%;
       }
 
       &:nth-child(even) {
-        width: 24%;
+        width: 25%;
+      }
+    }
+
+    @include xl {
+      &:nth-child(odd) {
+        width: 27%;
+      }
+
+      &:nth-child(even) {
+        width: 20%;
       }
     }
   }
