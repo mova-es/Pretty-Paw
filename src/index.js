@@ -5,10 +5,12 @@ import "swiper/scss/pagination";
 import "./index.scss";
 import { slidersInit } from "./modules/sliders";
 import { videoBackgroundInit } from "./modules/videobackground";
+import { menuControl } from "./modules/menuControl";
 
 //use modules
 
 videoBackgroundInit();
+menuControl();
 
 slidersInit(".career__slider", {
   pagination: {
