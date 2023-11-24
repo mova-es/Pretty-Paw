@@ -11,7 +11,7 @@ const params = {
     pagination: {
         el: '.swiper-pagination'
     },
-    modules: [Autoplay, Pagination]
+    modules: [ Pagination, Autoplay ]
 };
 
 export const slidersInit = (selectorSlider, newParams) => {

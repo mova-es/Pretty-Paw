@@ -45,6 +45,10 @@
         display: block;
         width: 36px;
 
+        &:hover {
+          color: $second;
+        }
+
         @include lg {
             width: 50px;
         }
@@ -58,6 +62,11 @@
         }
     }
 
+    &__developer {
+        &:hover {
+            color: $second;
+        }
+    }
     &__developer:first-child {
         margin-bottom: 19px;
 
